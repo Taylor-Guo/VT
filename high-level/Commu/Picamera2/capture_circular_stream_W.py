@@ -4,8 +4,8 @@ import numpy as np
 
 # 创建一个UDP socket
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-client_socket.bind(('192.168.137.77', 10001))  # 这里的端口要与树莓派端的设置相匹配
-
+client_socket.bind(('10.185.220.245', 10001))  # 这里的端口要与树莓派端的设置相匹配
+print(f'The socket opens')
 # 创建OpenCV视频窗口
 cv2.namedWindow('Video', cv2.WINDOW_NORMAL)
 
